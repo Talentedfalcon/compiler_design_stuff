@@ -1,0 +1,92 @@
+int num_term=2;
+int num_non_term=2;
+char term[][2]={"a","b"};
+char non_term[][2]={"A","B"};
+
+int num_rules=2;
+char production_rules[][2][100]={
+    {"A","Ba"},
+    {"B","b"}
+};
+
+
+int num_term=6;
+int num_non_term=4;
+char term[][6]={"a\0","b\0","d\0","g\0","h\0","$\0"};
+char non_term[][4]={"S\0","A\0","B\0","C\0"};
+
+int num_rules=9;
+char production_rules[][2][100]={
+    {"S\0","ACB\0"},
+    {"S\0","CbB\0"},
+    {"S\0","Ba\0"},
+    {"A\0","da\0"},
+    {"A\0","BC\0"},
+    {"B\0","g\0"},
+    {"B\0","$\0"},
+    {"C\0","h\0"},
+    {"C\0","$\0"},
+};
+
+
+int num_term=3;
+int num_non_term=3;
+char term[][3]={"a","b","$"};
+char non_term[][3]={"S","A","B"};
+
+int num_rules=4;
+char production_rules[][2][100]={
+    {"S","AaAb"},
+    {"S","BbBa"},
+    {"A","$"},
+    {"B","$"}
+};
+
+
+int num_term=6;
+int num_non_term=5;
+char term[][6]={"$","+","x","(",")","@"};
+char non_term[][5]={"A","B","C","D","E"};
+
+int num_rules=8;
+char production_rules[][2][100]={
+    {"A","CB"},
+    {"B","+CB"},
+    {"B","$"},
+    {"C","ED"},
+    {"D","xED"},
+    {"D","$"},
+    {"E","(A)"},
+    {"E","@"}    
+};
+
+
+int num_term=5;
+int num_non_term=3;
+char term[][5]={"(",")","a",",","$"};
+char non_term[][3]={"S","L","K"};
+
+int num_rules=5;
+char production_rules[][2][100]={
+    {"S","(L)"},
+    {"S","a"},
+    {"L","SK"},
+    {"K",",SK"},
+    {"K","$"},
+};
+
+
+int num_term=5;
+int num_non_term=5;
+char term[][5]={"a","b","d","g","$"};
+char non_term[][5]={"S","A","4","B","C"};
+
+int num_rules=6;
+char production_rules[][2][100]={
+    {"S","A"},
+    {"A","aB4"},
+    {"4","d4"},
+    {"4","$"},
+    {"B","b"},
+    {"C","g"},
+};
